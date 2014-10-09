@@ -57,12 +57,17 @@ Blue Grey           116,117,127     73757F      230,010,050
 /* 2. 'COLOR */
 
 html {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 21, 29, 0.9)), to(rgba(0, 0, 0, .85))), url(../images/grey2.jpg), #042e40;
-    background: -webkit-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
-    background: -moz-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
-    background: -o-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
-    background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 21, 29, 0.9)), to(rgba(0, 0, 0, .85))), url(../images/greypattern.jpg), #042e40;
+    background: -webkit-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/greypattern.jpg), #042e40;
+    background: -moz-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/greypattern.jpg), #042e40;
+    background: -o-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/greypattern.jpg), #042e40;
+    background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/greypattern.jpg), #042e40;
     background-attachment: fixed;
+    background-position: center top;
+}
+header h1 {
+    background: url(../images/test.jpg), #111;
+    color: #fff;
 }
 header nav {
     background: #042e40;
