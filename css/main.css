@@ -32,87 +32,99 @@ VI.  *** MOBILE LAYOUTS ***
 *********************************************************************
 COLOR PALETTE
 Color Name          RGB             HEX         HSL
-Light Blue Grey     237,240,255     #EDF0FF      230,007,100
-Indigo              102,079,232     #664FE8      249,066,091
-Blue                069,140,217     #458CD9      211,068,085
-Dark Purple         037,006,087     #250657      263,093,034
-Dark Teal           004,046,064     #042E40      198,093,025
-Blue Grey           116,117,127     #73757F      230,010,050
+Light Blue Grey     237,240,255     EDF0FF      230,007,100
+Indigo              102,079,232     664FE8      249,066,091
+Blue                069,140,217     458CD9      211,068,085
+Dark Purple         037,006,087     250657      263,093,034
+Dark Teal           002,021,029     02151d      198,087,006
+Blue Grey           116,117,127     73757F      230,010,050
 *********************************************************************
 ********************************************************************/
+
 /* 1. 'CLEAR FIX */
-.cf:before,.cf:after,.row:before,.row:after{
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
     content: " ";
     display: table;
 }
-.cf:after,.row:after{
+.cf:after,
+.row:after {
     clear: both;
 }
 /* 2. 'COLOR */
-html{
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(004,046,064,0.95)), color-stop(rgba(004,046,064,.95))), to(url(../images/grey2.jpg)),#042e40;
-    background: -webkit-linear-gradient(rgba(004,046,064,0.95), rgba(004,046,064,.95)), url(../images/grey2.jpg),#042e40;
-       background: -moz-linear-gradient(rgba(004,046,064,0.95), rgba(004,046,064,.95)), url(../images/grey2.jpg),#042e40;
-         background: -o-linear-gradient(rgba(004,046,064,0.95), rgba(004,046,064,.95)), url(../images/grey2.jpg),#042e40;
-            background: linear-gradient(rgba(004,046,064,0.95),rgba(004,046,064,.95)),url(../images/grey2.jpg),#042e40;
+
+html {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 21, 29, 0.9)), to(rgba(0, 0, 0, .85))), url(../images/grey2.jpg), #042e40;
+    background: -webkit-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
+    background: -moz-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
+    background: -o-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
+    background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, .85)), url(../images/grey2.jpg), #042e40;
+    background-attachment: fixed;
 }
-header nav{
+header nav {
     background: #042e40;
     color: #edf0ff;
 }
-header a{
+header a {
     color: #ccf;
 }
-body{
+body {
     background: #edf0ff;
     -webkit-box-shadow: 0 0 15px 0 #edf0ff;
-       -moz-box-shadow: 0 0 15px 0 #edf0ff;
-            box-shadow: 0 0 15px 0 #edf0ff;
+    box-shadow: 0 0 15px 0 #edf0ff;
 }
-footer{
+footer {
     background: #250657;
     color: #edf0ff;
 }
 /********************************************
 III. 'GLOBAL LAYOUTS
 ********************************************/
-h1{
+
+h1 {
     height: 100px;
     line-height: 100px;
 }
-h2{
+h2 {
     text-align: center;
 }
-body{
-    margin: 0 auto 2em;
+img {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+body {
+    margin: 0 auto;
     max-width: 960px;
 }
-.main{
+.main {
     margin: 1em 0;
 }
-footer{
-
-}
+footer {}
 /* 1. 'HEADER */
-header{
-    text-align:center;
+
+header {
+    text-align: center;
 }
-    header nav{
-        height: 50px;
-        width: 100%;
-    }
-    header li{
-        float: left;
-        line-height: 50px;
-        width: 33.33%;
-    }
-    header a{
-        display: block;
-        text-decoration: none;
-        text-transform: capitalize;
-    }
+header nav {
+    height: 50px;
+    width: 100%;
+}
+header li {
+    float: left;
+    line-height: 50px;
+    width: 33.33%;
+}
+header a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 /* 2. 'MAIN */
-.main p{
+
+.main p {
     margin-top: .5em;
     margin-bottom: .5em;
 }
@@ -121,7 +133,8 @@ header{
 /* 4. 'ARTICLE */
 
 /* 5. 'FOOTER */
-footer{
+
+footer {
     font-size: .9em;
     font-style: italic;
     line-height: 50px;
@@ -130,45 +143,42 @@ footer{
 /********************************************
 IV. 'DESKTOP LAYOUTS
 ********************************************/
-@media only screen and  (min-width:960px){
+
+@media only screen and (min-width: 960px) {
+    body {
+        -webkit-border-radius: 0 0 15px 15px;
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 2em;
+    }
     /* 1. 'HEADER */
-
     /* 2. 'MAIN */
-
     /* 3. 'SIDEBAR */
-
     /* 4. 'ARTICLE */
-
     /* 5. 'FOOTER */
-
+    footer {
+        -webkit-border-radius: 0 0 15px 15px;
+        border-radius: 0 0 15px 15px;
+    }
 }
 /********************************************
 IV. 'TABLET LAYOUTS
 ********************************************/
-@media only screen and (min-width:481px) and (max-width:959px){
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
     /* 1. 'HEADER */
-
     /* 2. 'MAIN */
-
     /* 3. 'SIDEBAR */
-
     /* 4. 'ARTICLE */
-
     /* 5. 'FOOTER */
-
 }
 /********************************************
 IV. 'MOBILE LAYOUTS
 ********************************************/
-@media only screen and (max-width:480px){
+
+@media only screen and (max-width: 480px) {
     /* 1. 'HEADER */
-
     /* 2. 'MAIN */
-
     /* 3. 'SIDEBAR */
-
     /* 4. 'ARTICLE */
-
     /* 5. 'FOOTER */
-
 }
