@@ -1,0 +1,109 @@
+/*************************************************
+GRID
+**************************************************
+Table of Contents:
+1. Formatting
+2. Twelve Columns
+5. One Column
+*/
+/*****************************
+1. 'Formatting
+*****************************/
+.row {
+    width: 100%;
+}
+.row .row{
+    padding: none;
+}
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12{
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    position: relative;
+}
+/*****************************
+2. 'Twelve Columns
+*****************************/
+.grid1{
+    width: 5.83%;
+}
+.grid2{
+    width: 14.16%;
+}
+.grid3{
+    width: 22.5%;
+}
+.grid4{
+    width: 30.83%;
+}
+.grid5{
+    width: 39.16%;
+}
+.grid6{
+    width: 47.5%;
+}
+.grid7{
+    width: 55.83%;
+}
+.grid8{
+    width: 63.16%;
+}
+.grid9{
+    width: 72.5%;
+}
+.grid10{
+    width: 80.83%;
+}
+.grid11{
+    width: 95.16%;
+}
+.grid12{
+    width: 97.5%;
+}
+.off1{
+    margin-left: 8.33%;
+}
+.off2{
+    margin-left: 16.66%;
+}
+.off3{
+    margin-left: 25%;
+}
+.off4{
+    margin-left: 33.33%;
+}
+.off5{
+    margin-left: 41.66%;
+}
+.off6{
+    margin-left: 50%;
+}
+.off7{
+    margin-left: 58.33%;
+}
+.off8{
+    margin-left: 66.66%;
+}
+.off9{
+    margin-left: 75%;
+}
+.off10{
+    margin-left: 83.33%;
+}
+.off11{
+    margin-left: 91.66%;
+}
+/*****************************
+5. 'One Column
+*****************************/
+@media only screen and (max-width: 480px) {
+    .grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12{
+        width: 97.5%;
+    }
+    .off1,.off2,.off3,.off4,.off5,.off6,.off7,.off8,.off9, .off10,.off11{
+        margin-left: 0;
+    }
+}
