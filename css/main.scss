@@ -182,6 +182,11 @@ IV. 'TABLET LAYOUTS
 IV. 'MOBILE LAYOUTS
 ********************************************/
 @media only screen and (max-width: 480px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
   /* 1. 'HEADER */
   /* 2. 'MAIN */
   /* 3. 'SIDEBAR */
