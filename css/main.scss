@@ -40,143 +40,110 @@ Dark Teal           002,021,029     02151d      198,087,006
 Blue Grey           116,117,127     73757F      230,010,050
 *********************************************************************
 ********************************************************************/
-
 /* 1. 'CLEAR FIX */
-
 .cf {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
 }
-
 .row {
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
 }
-
 .cf:after, .row:after {
-  clear: both;
+    clear: both;
 }
-
 /* 2. 'COLOR */
-
 html {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 21, 29, 0.9)), to(rgba(0, 0, 0, 0.85))), url(../images/greypattern.jpg), #042e40;
-  background: -webkit-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
-  background: -moz-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
-  background: -o-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
-  background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
-  background-attachment: fixed;
-  background-position: center top;
+    background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
+    background-attachment: fixed;
+    background-position: center top;
 }
-
 header {
-  h1 {
-    background: url(../images/test.jpg), #111111;
-    -webkit-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    color: #fff;
-  }
-  nav {
-    background: #042e40;
-    color: #edf0ff;
-  }
-  a {
-    color: #ccf;
-  }
+    h1 {
+        background: url(../images/test.jpg), #111;
+        background-size: 100% 100%;
+        color: #fff;
+    }
+    nav {
+        background: #042e40;
+        color: #edf0ff;
+    }
+    a {
+        color: #ccf;
+    }
 }
-
 body {
-  background: #edf0ff;
-  -webkit-box-shadow: 0 0 15px 0 #edf0ff;
-  box-shadow: 0 0 15px 0 #edf0ff;
+background: #edf0ff;
+    box-shadow: 0 0 15px 0 #edf0ff;
 }
-
 footer {
-  background: #250657;
-  color: #edf0ff;
+    background: #250657;
+    color: #edf0ff;
 }
-
 /********************************************
 III. 'GLOBAL LAYOUTS
 ********************************************/
-
 h1 {
   height: 100px;
   line-height: 100px;
 }
-
 h2 {
   text-align: center;
 }
-
 img {
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-
 body {
   margin: 0 auto;
   max-width: 960px;
 }
-
 .main {
   margin: 1em 0;
 }
+footer {
 
-footer! {}
-
+}
 /* 1. 'HEADER */
-
 header {
-  text-align: center;
-  nav {
+    text-align: center;
+    nav {
     height: 50px;
     width: 100%;
-  }
-  li {
+}
+li {
     float: left;
     line-height: 50px;
     width: 33.33%;
-  }
-  a {
+}
+a {
     display: block;
     text-decoration: none;
     text-transform: capitalize;
-  }
 }
-
+}
 /* 2. 'MAIN */
-
 .main p {
   margin-top: .5em;
   margin-bottom: .5em;
 }
-
 /* 3. 'SIDEBAR */
-
 /* 4. 'ARTICLE */
-
 /* 5. 'FOOTER */
-
 footer {
-  font-size: .9em;
-  font-style: italic;
-  line-height: 50px;
-  text-align: center;
+    font-size: .9em;
+    font-style: italic;
+    line-height: 50px;
+    text-align: center;
 }
-
 /********************************************
 IV. 'DESKTOP LAYOUTS
 ********************************************/
-
 @media only screen and (min-width: 960px) {
   body {
-    -webkit-border-radius: 0 0 15px 15px;
     border-radius: 0 0 15px 15px;
     margin-bottom: 2em;
   }
@@ -185,16 +152,13 @@ IV. 'DESKTOP LAYOUTS
   /* 3. 'SIDEBAR */
   /* 4. 'ARTICLE */
   /* 5. 'FOOTER */
-  footer {
-    -webkit-border-radius: 0 0 15px 15px;
-    border-radius: 0 0 15px 15px;
-  }
+    footer {
+        border-radius: 0 0 15px 15px;
+    }
 }
-
 /********************************************
 IV. 'TABLET LAYOUTS
 ********************************************/
-
 @media only screen and (min-width: 481px) and (max-width: 959px) {
   /* 1. 'HEADER */
   /* 2. 'MAIN */
@@ -202,11 +166,9 @@ IV. 'TABLET LAYOUTS
   /* 4. 'ARTICLE */
   /* 5. 'FOOTER */
 }
-
 /********************************************
 IV. 'MOBILE LAYOUTS
 ********************************************/
-
 @media only screen and (max-width: 480px) {
   /* 1. 'HEADER */
   /* 2. 'MAIN */
