@@ -69,11 +69,22 @@ header {
         color: #fff;
     }
     nav {
-        background: #042e40;
+        li {
+        background: linear-gradient(to bottom, hsl(199,100%,10%) 0%,hsl(0,0%,20%) 100%), #042e40;
         color: #edf0ff;
-    }
-    a {
-        color: #ccf;
+            a {
+                color: #fff;
+            }
+        }
+        li:hover {
+            background: linear-gradient(to bottom, hsl(0,0%,20%) 0%,hsl(199,100%,10%) 100%), #193d4d;
+        }
+        li.current {
+            background: #1a1a1a;
+            a {
+                cursor: default;
+            }
+        }
     }
 }
 body {
@@ -111,19 +122,19 @@ footer {
 header {
     text-align: center;
     nav {
-    height: 50px;
-    width: 100%;
-}
-li {
-    float: left;
-    line-height: 50px;
-    width: 33.33%;
-}
-a {
-    display: block;
-    text-decoration: none;
-    text-transform: capitalize;
-}
+        height: 50px;
+        width: 100%;
+        li {
+            float: left;
+            line-height: 50px;
+            width: 25%;
+            a {
+                display: block;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
 }
 /* 2. 'MAIN */
 .main p {
