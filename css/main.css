@@ -82,9 +82,13 @@ header nav li:hover {
   background: -webkit-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
   background: -moz-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
   background: -o-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
-  background: linear-gradient(to bottom, #333333 0%, #002333 100%), #193d4d; }
+  background: linear-gradient(to bottom, #333333 0%, #002333 100%), #193d4d;
+  -webkit-box-shadow: inset 0 0 5px 0 #FFFFFF;
+          box-shadow: inset 0 0 5px 0 #FFFFFF; }
 header nav li.current {
-  background: #1a1a1a; }
+  background: #1a1a1a;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   header nav li.current a {
     cursor: default; }
 
@@ -143,7 +147,7 @@ header {
 /* 4. 'ARTICLE */
 /* 5. 'FOOTER */
 footer {
-  font-size: 0.9em
+  font-size: 0.9em;
   font-style: italic;
   line-height: 50px;
   text-align: center; }
