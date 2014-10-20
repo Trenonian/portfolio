@@ -54,31 +54,48 @@ Blue Grey           116,117,127     73757F      230,010,050
 
 /* 2. 'COLOR */
 html {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 21, 29, 0.9)), to(rgba(0, 0, 0, 0.85))), url(../images/greypattern.jpg), #042e40;
+  background: -webkit-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
+  background: -moz-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
+  background: -o-linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
   background: linear-gradient(rgba(2, 21, 29, 0.9), rgba(0, 0, 0, 0.85)), url(../images/greypattern.jpg), #042e40;
   background-attachment: fixed;
   background-position: center top; }
 
 header h1 {
   background: url(../images/test.jpg), #111;
-  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
   color: #fff; }
 header nav li {
+  background: -webkit-gradient(linear, left top, left bottom, from(#002333), to(#333333)), #042e40;
+  background: -webkit-linear-gradient(top, #002333 0%, #333333 100%), #042e40;
+  background: -moz-linear-gradient(top, #002333 0%, #333333 100%), #042e40;
+  background: -o-linear-gradient(top, #002333 0%, #333333 100%), #042e40;
   background: linear-gradient(to bottom, #002333 0%, #333333 100%), #042e40;
   color: #edf0ff; }
   header nav li a {
     color: #fff; }
 header nav li:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#002333)), #193d4d;
+  background: -webkit-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
+  background: -moz-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
+  background: -o-linear-gradient(top, #333333 0%, #002333 100%), #193d4d;
   background: linear-gradient(to bottom, #333333 0%, #002333 100%), #193d4d;
-  box-shadow: inset 0 0 5px 0 #FFFFFF; }
+  -webkit-box-shadow: inset 0 0 5px 0 #FFFFFF;
+          box-shadow: inset 0 0 5px 0 #FFFFFF; }
 header nav li.current {
   background: #1a1a1a;
-  box-shadow: none; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   header nav li.current a {
     cursor: default; }
 
 body {
   background: #edf0ff;
-  box-shadow: 0 0 15px 0 #edf0ff; }
+  -webkit-box-shadow: 0 0 15px 0 #edf0ff;
+          box-shadow: 0 0 15px 0 #edf0ff; }
 
 footer {
   background: #250657;
@@ -96,7 +113,8 @@ h2 {
   text-align: center; }
 
 img {
-  border-radius: 5px; }
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
 
 body {
   margin: 0 auto;
@@ -144,10 +162,12 @@ IV. 'DESKTOP LAYOUTS
   /* 4. 'ARTICLE */
   /* 5. 'FOOTER */
   body {
-    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+            border-radius: 0 0 15px 15px;
     margin-bottom: 2em; }
   footer {
-    border-radius: 0 0 15px 15px; } }
+    -webkit-border-radius: 0 0 15px 15px;
+            border-radius: 0 0 15px 15px; } }
 
 /********************************************
 IV. 'TABLET LAYOUTS
@@ -167,5 +187,3 @@ IV. 'MOBILE LAYOUTS
     display: block;
     margin-left: auto;
     margin-right: auto; } }
-
-/*# sourceMappingURL=Xmain.css.map */
