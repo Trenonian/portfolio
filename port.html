@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
 </head>
 <body>
     <header>
@@ -27,7 +36,7 @@
         </nav>
     </header>
     <div class="main row">
-        <div id="accordion">
+        <div id="accordion" class="accordion">
             <h3>Notes</h3>
             <div>
                <ul>
@@ -61,7 +70,7 @@
                             </li>
                             <li><a href="if/htmlE/microdata.html">Microdata</a>
                             </li>
-                            <li><a href="if/htmlE/outline.html" id="scissorsOutline" onmouseover="highlight()" onmouseout="normal()">Outline of "Creating collapseable details"</a>
+                            <li><a href="if/htmlE/outline.html" id="scissorsOutline">Outline of "Creating collapseable details"</a>
                             </li>
                             <li><a href="if/htmlE/tables.html">Table basics</a>
                             </li>
@@ -167,155 +176,6 @@
                </ul>
            </div>
        </div>
-        <details>
-                        <summary>HTML Essentials</summary>
-                        <ul>
-                            <li><a href="if/htmlE/structure.html">The structure of an HTML document</a>
-                            </li>
-                            <li><a href="if/htmlE/inline.html">Using block and inline tags</a>
-                            </li>
-                            <li><a href="if/htmlE/javascript.html">Adding scripting elements</a>
-                            </li>
-                            <li><a href="if/htmlE/text.html">Suggesting word-break opportunities</a>
-                            </li>
-                            <li><a href="if/htmlE/css.html">Understanding CSS placement</a>
-                            </li>
-                            <li><a href="if/htmlE/image-float.html">Breaking lines around an image</a>
-                            </li>
-                            <li><a href="if/htmlE/links.html">Using image links</a>
-                            </li>
-                            <li><a href="if/htmlE/menu.html">Lists - in depth and text menues</a>
-                            </li>
-                            <li><a href="if/htmlE/scissors.html" id="scissorsLink">Creating collapsible details</a>
-                            </li>
-                            <li><a href="if/htmlE/video.html">Embedding video</a>
-                            </li>
-                            <li><a href="if/htmlE/progress.html">Creating dynamic progress indicators</a>
-                            </li>
-                            <li><a href="if/htmlE/microdata.html">Microdata</a>
-                            </li>
-                            <li><a href="if/htmlE/outline.html" id="scissorsOutline" onmouseover="highlight()" onmouseout="normal()">Outline of "Creating collapseable details"</a>
-                            </li>
-                            <li><a href="if/htmlE/tables.html">Table basics</a>
-                            </li>
-                            <li><a href="if/htmlE/css-frame.html">Simulating frames with CSS</a>
-                            </li>
-                            <li><a href="if/htmlE/output.html">Displaying results with output</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <p><a href="if/markup/markup.html">Mark-Up</a>
-                    </p>
-                    <details>
-                        <summary>CSS Core</summary>
-                        <ul>
-                            <li><a href="if/cssCore/embedded.html">Embedded styles</a>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>Targeting page content</summary>
-                                    <ul>
-                                        <li><a href="if/cssCore/index.html">Index</a>
-                                        </li>
-                                        <li><a href="if/cssCore/contact.html">Contact</a>
-                                        </li>
-                                        <li><a href="if/cssCore/galleries.html">Galleries</a>
-                                        </li>
-                                        <li><a href="if/cssCore/philadelphia.html">Philadelphia</a>
-                                        </li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li><a href="if/cssCore/conflicts.html">Resolving conflicts</a>
-                            </li>
-                            <li><a href="if/cssCore/textformatting.html">Basic Text Formatting</a>
-                            </li>
-                            <li><a href="if/cssCore/styling.html">Styling Container Elements</a>
-                            </li>
-                            <li><a href="if/cssCore/color.html">Working with Color</a>
-                            </li>
-                            <li><a href="if/cssCore/internetSearch.html">Internet Search</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>CSS Page Layouts</summary>
-                        <ul>
-                            <li><a href="if/cssCore/reset.html">Using CSS Resets</a>
-                            </li>
-                            <li><a href="if/cssCore/structure.html">Structuring content with HTML5</a>
-                            </li>
-                            <li><a href="if/cssCore/floats.html">Working with Floats</a>
-                            </li>
-                            <li><a href="if/cssCore/position.html">Positioning Elements</a>
-                            </li>
-                            <li><a href="if/cssCore/grid.html">Building a Fixed Layout</a>
-                            </li>
-                            <li><a href="if/cssCore/fluid.html">Building Flexible Layout</a>
-                            </li>
-                            <li><a href="if/cssCore/responsive.html">Building Responsive Layouts</a>
-                            </li>
-                            <li><a href="if/cssCore/enhance.html">Enhancing Page Design</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>CSS Styling Navigation</summary>
-                        <ul>
-                            <li><a href="if/cssNav/navstructure.html">Structuring Navigation</a>
-                            </li>
-                            <li><a href="if/cssNav/global.html">Global Link Styles</a>
-                            </li>
-                            <li><a href="if/cssNav/vertical.html">Vertical Menu</a>
-                            </li>
-                            <li><a href="if/cssNav/horizontal.html">Horizontal Menu</a>
-                            </li>
-                            <li><a href="if/cssNav/dropdown.html">Dropdown Menus</a>
-                            </li>
-                            <li><a href="if/cssNav/enhance.html">Enhancing Navigation with CSS</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary>Photoshop Fundamentals</summary>
-                        <ul>
-                            <li><a href="if/photofund/welcome.jpg">Opening through Camera Raw</a>
-                            </li>
-                            <li><a href="if/photofund/downsampled.jpg">Downsampling for Email</a>
-                            </li>
-                            <li><a href="if/photofund/art.jpg">Using Layers</a>
-                            </li>
-                            <li><a href="if/photofund/antique.jpg">Saving a flat photo to JPEG</a>
-                            </li>
-                            <li><a href="if/photofund/pisa.jpg">Filling In Missing Details</a>
-                            </li>
-                            <li><a href="if/photofund/contrast.jpg">Fixing Contrast with Shadows/Highlights</a>
-                            </li>
-                            <li><a href="if/photofund/treehouse.jpg">Adding Color</a>
-                            </li>
-                            <li><a href="if/photofund/flowermoon.jpg">Selecting and Editing</a>
-                            </li>
-                            <li><a href="if/photofund/retouch.jpg">Retouch and Heal</a> - <a href="if/photofund/original.jpg">(Original)</a>
-                            </li>
-                        </ul>
-                    </details>
-                    <p><a href="if/designforweb/designforweb.html" title="Designing for the web">Designing for the Web</a>
-                    </p>
-                    <details>
-                        <summary>Tut's Cafe</summary>
-                        <ul>
-                            <li><a href="if/restaurant/index.html" title="Tut's Cafe home page">Home page</a>
-                            </li>
-                            <li><a href="if/restaurant/menu.html" title="Tut's Cafe menu">Menu</a>
-                            </li>
-                            <li><a href="if/restaurant/resources/tuts1.jpg" title="Tut's Cafe style tyle 1">Style Tile 1</a>
-                            </li>
-                            <li><a href="if/restaurant/resources/tuts2.jpg" title="Tut's Cafe style tile 2">Style Tile 2</a>
-                            </li>
-                            <li><a href="if/restaurant/resources/tuts3.jpg" title="Tut's Cafe style tile 3">Style Tile 3</a>
-                            </li>
-                        </ul>
-                    </details>
     </div>
     <footer>
         <h2>Footer</h2>

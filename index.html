@@ -10,29 +10,37 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
 </head>
 
 <body>
     <header>
+       <div class="banner">
         <h1>Michael Anderson's Portfolio</h1>
+        </div>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Home</a>
-                </li>
-                <li><a href="port.html">Portfolio</a>
-                </li>
-                <li><a href="http://michaeljeffreyanderson.wordpress.com/">Blog</a>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
+                <li class="gradient current"><a href="index.html">Home</a></li>
+                <li class="gradient"><a href="port.html">Portfolio</a></li>
+                <li class="gradient"><a href="http://michaeljeffreyanderson.wordpress.com/">Blog</a></li>
+                <li class="gradient"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="main row">
         <aside id="sidebar" class="grid4">
-            <img src="images/me.jpg" />
+            <img src="images/me.jpg" alt="A Picture of Myself" />
         </aside>
         <article class="grid8">
+           <h2>About Me</h2>
             <p>
                 I am an aspiring Web Developer eager to make some awesome websites. I enjoy online gaming, good books, and short walks on the beach. I grew up in Bartlesville, OK, then moved down to Houston, TX, then finally here to Edmond, OK. I have always been interested in coding, and look forward to making practical and challenging java and flash applications for my sites. I am keeping my eyes open to the design side to this as well, though that holds less interest with me. Thank you for visiting my fledging site.
             </p>
